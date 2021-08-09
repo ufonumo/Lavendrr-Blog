@@ -68,6 +68,30 @@ button.btn.btn_login{
   padding: .8rem 3rem;
 }
 
+button.navbar-toggler.collapsed , button.navbar-toggler , button.navbar-toggler:focus{
+  color: #ffff;
+  border-color: transparent !important ;
+  outline: none !important;
+}
+
+button.btn.btn-outline-success{
+  color: rgb(240, 90, 45);
+  border-color: rgb(240, 90, 45);
+  border-left: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+input.mr-2.form-control{
+  border-right: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.avatar{
+  display: flex;
+}
+
 @media (max-width: 768px) {
   .home_message h1{
     font-size: 40px;
@@ -76,4 +100,10 @@ button.btn.btn_login{
   .home_message p{
     font-size: 14px;
   }
+
+  a.nav-link , .navbar-nav .d-flex,  .avatar , button.btn.btn_login{
+    margin-bottom: 1.2rem;
+  }
+
+  
 }

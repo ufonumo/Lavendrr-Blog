@@ -48,8 +48,10 @@ const NavHome = () => {
                                     </Form>
                                 </Nav>
                                 <Nav className='ms-auto'>
-                                    < Avatar src={userData?.imageUrl} alt={userData?.name} className='avatar' />
-                                    <small className='text-white me-4 mt-2 ms-2'>{userData?.givenName}</small>
+                                    <div className="avatar">
+                                        < Avatar src={userData?.imageUrl} alt={userData?.name} className='avatar' />
+                                        <small className='text-white me-4 mt-2 ms-2'>{userData?.givenName}</small>
+                                    </div>
                                     <GoogleLogout clientId={process.env.REACT_APP_CLIENT_ID}
                                         render={(renderProps) => (
                                             <button onClick={renderProps.onClick}
